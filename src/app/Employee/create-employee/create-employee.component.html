@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <form [formGroup]="addForm">
+                <div class="mb-3">
+                    <div class=>
+                        <label class="form-check-label" for="fieldName">
+                            Name
+                          </label>
+                      <input class="form-check-input" type="text" id="fieldName" formControlName="name">
+                    
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class=>
+                        <label class="form-check-label" for="fieldPosition">
+                            Position
+                          </label>
+                      <input class="form-check-input" type="text" id="fieldPosition" formControlName="position">
+                    
+                    </div>
+                  </div><div class="mb-3">
+                    <div class=>
+                        <label class="form-check-label" for="fieldDepartment">
+                            Department
+                          </label>
+                      <input class="form-check-input" type="text" id="fieldDepartment" formControlName="department">
+                    
+                    </div>
+                  </div><div class="mb-3">
+                    <div class=>
+                        <label class="form-check-label" for="fieldSalary">Salary
+                          </label>
+                      <input class="form-check-input" type="number" id="fieldSalary" formControlName="salary">
+                    
+                    </div>
+                  </div>
+                  <button class="btn add" (click)="onSubmit()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
